@@ -10,7 +10,7 @@ public class MenuCapituloDeProgramacion {
 
         do {
             System.out.println("----------------------------------------------------------------------------");
-            System.out.println("|                    MENU CAPITULO DE PROGRAMACION                         |");
+            System.out.println("|                      MENU CAPITULO DE PROGRAMACION                       |");
             System.out.println("|                     Leidy Ibeth Muñoz Zea - lmuno15                      |");
             System.out.println("|                 Andrés Felipe Algarra Reyes  - aalgar1                   |");
             System.out.println("----------------------------------------------------------------------------");
@@ -74,7 +74,7 @@ public class MenuCapituloDeProgramacion {
 
         do {
             System.out.println("----------------------------------------------------------------------------");
-            System.out.println("|                          Datos Primitivos                                |");
+            System.out.println("|                          DATOS PRIMITIVOS                                |");
             System.out.println("----------------------------------------------------------------------------");
             System.out.println("|                        1. Explicacion byte                               |");
             System.out.println("|                        2. Explicacion short                              |");
@@ -106,7 +106,7 @@ public class MenuCapituloDeProgramacion {
                 case 5:
                     Explicacion_float();
                     break;
-                /*case 6:
+                case 6:
                     Explicacion_double();
                     break;
                 case 7:
@@ -114,7 +114,7 @@ public class MenuCapituloDeProgramacion {
                     break;
                 case 8:
                     Explicacion_boolean();
-                    break;*/
+                    break;
                 case 9:
                     System.out.println("                                                                    ");
                     System.out.println("  Volviendo a MENÚ PRINCIPAL...                                     ");
@@ -132,7 +132,7 @@ public class MenuCapituloDeProgramacion {
         do {
             System.out.println("----------------------------------------------------------------------------");
             System.out.println("|                                                                          |");
-            System.out.println("|                           Explicacion byte                               |");
+            System.out.println("|                                 byte                                     |");
             System.out.println("|                                                                          |");
             System.out.println("----------------------------------------------------------------------------");
             System.out.println("|    La variable byte es un tipo de dato primitivo que se utiliza para     |");
@@ -167,7 +167,7 @@ public class MenuCapituloDeProgramacion {
         do {
             System.out.println("----------------------------------------------------------------------------");
             System.out.println("|                                                                          |");
-            System.out.println("|                           Explicacion short                              |");
+            System.out.println("|                                  short                                   |");
             System.out.println("|                                                                          |");
             System.out.println("----------------------------------------------------------------------------");
             System.out.println("|     Este tipo de dato utiliza 16 bits con signo y puede almacenar        |");
@@ -176,7 +176,7 @@ public class MenuCapituloDeProgramacion {
             System.out.println("|     los bytes, pero aún se desea ahorrar memoria en comparación con      |");
             System.out.println("|     los tipos de dato más grandes.                                       |");
             System.out.println("|                                                                          |");
-            System.out.println("|                         Ejemplo: short precio = 14500                    |");
+            System.out.println("|                      Ejemplo: short precio = 14500                       |");
             System.out.println("----------------------------------------------------------------------------");
             System.out.print("Ingrese '1' para volver al menú DATOS PRIMITIVOS: ");
             opcion = scanner.nextInt();
@@ -200,7 +200,7 @@ public class MenuCapituloDeProgramacion {
         do {
             System.out.println("----------------------------------------------------------------------------");
             System.out.println("|                                                                          |");
-            System.out.println("|                           Explicacion int                                |");
+            System.out.println("|                                  int                                     |");
             System.out.println("|                                                                          |");
             System.out.println("----------------------------------------------------------------------------");
             System.out.println("|    Es un tipo de dato de 32 bits con signo utilizado para almacenar      |");
@@ -208,7 +208,7 @@ public class MenuCapituloDeProgramacion {
             System.out.println("|    2,147,483,647 (2^31 - 1). Es el tipo de dato más comúnmente           |");
             System.out.println("|    utilizado para representar números enteros.                           |");
             System.out.println("|                                                                          |");
-            System.out.println("|                         Ejemplo: int ahorro = 150000;                    |");
+            System.out.println("|                     Ejemplo: int ahorro = 150000;                        |");
             System.out.println("----------------------------------------------------------------------------");
             System.out.print("Ingrese '1' para volver al menú DATOS PRIMITIVOS: ");
             opcion = scanner.nextInt();
@@ -232,7 +232,7 @@ public class MenuCapituloDeProgramacion {
         do {
             System.out.println("----------------------------------------------------------------------------");
             System.out.println("|                                                                          |");
-            System.out.println("|                           Explicacion long                               |");
+            System.out.println("|                                   long                                   |");
             System.out.println("|                                                                          |");
             System.out.println("----------------------------------------------------------------------------");
             System.out.println("|    El tipo de dato long es un entero de 64 bits complemento a dos.       |");
@@ -241,7 +241,7 @@ public class MenuCapituloDeProgramacion {
             System.out.println("|    cuando necesite un rango de valores más amplio que el                 |");
             System.out.println("|    proporcionado por int.                                                |");
             System.out.println("|                                                                          |");
-            System.out.println("|                     Ejemplo: long metros = 18586523l;                     |");
+            System.out.println("|                    Ejemplo: long metros = 18586523l;                      |");
             System.out.println("----------------------------------------------------------------------------");
             System.out.print("Ingrese '1' para volver al menú DATOS PRIMITIVOS: ");
             opcion = scanner.nextInt();
@@ -266,7 +266,7 @@ public class MenuCapituloDeProgramacion {
         do {
             System.out.println("----------------------------------------------------------------------------");
             System.out.println("|                                                                          |");
-            System.out.println("|                           Explicacion float                              |");
+            System.out.println("|                                 float                                    |");
             System.out.println("|                                                                          |");
             System.out.println("----------------------------------------------------------------------------");
             System.out.println("|    En Java, una variable de tipo float es un tipo de dato que se         |");
@@ -294,86 +294,440 @@ public class MenuCapituloDeProgramacion {
 
     }
 
-    private static void VariablesString() {
+    private static void Explicacion_double() {
         int opcion;
 
         do {
-            System.out.println("Variables String");
-            System.out.println("1. OPCION 1");
-            System.out.println("2. OPCION 2");
-            System.out.println("3. Volver al menu principal");
-            System.out.print("Ingrese la opcion: ");
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.println("|                                                                          |");
+            System.out.println("|                                 double                                   |");
+            System.out.println("|                                                                          |");
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.println("|    El tipo de dato double se usa para representar números de punto       |");
+            System.out.println("|    flotante con doble precisión, lo que significa que tiene una mayor    |");
+            System.out.println("|    precisión en comparación con float. Los valores de tipo double        |");
+            System.out.println("|    tienen aproximadamente 15-16 dígitos decimales de precisión, lo       |");
+            System.out.println("|    cual es útil para cálculos matemáticos que requieren una mayor        |");
+            System.out.println("|    exactitud.                                                            |");
+            System.out.println("|                                                                          |");
+            System.out.println("|               Ejemplo: double numeropi = 3.14159265358979d               |");
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.print("Ingrese '1' para volver al menú DATOS PRIMITIVOS: ");
             opcion = scanner.nextInt();
             scanner.nextLine();  // Consume the newline character
 
             switch (opcion) {
                 case 1:
-                    System.out.println("Usted ingresó a la opcion 1 del submenu2.");
-                    break;
-                case 2:
-                    System.out.println("Usted ingresó a la opcion 2 del submenu2.");
-                    break;
-                case 3:
-                    System.out.println("Retornando al menu anterior...");
+                    System.out.println("                                                                    ");
+                    System.out.println("  Volviendo al menú DATOS PRIMITIVOS...                             ");
+                    System.out.println("                                                                    ");
                     break;
                 default:
                     System.out.println("Ingrese una opcion valida.");
             }
-        } while (opcion != 3);
+        } while (opcion != 1);
+
+    }
+
+    private static void Explicacion_char() {
+        int opcion;
+
+        do {
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.println("|                                                                          |");
+            System.out.println("|                                 char                                     |");
+            System.out.println("|                                                                          |");
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.println("|    El tipo de dato char se utiliza para almacenar un solo carácter       |");
+            System.out.println("|    Unicode. Un char en Java ocupa 16 bits y puede representar            |");
+            System.out.println("|    cualquier carácter del conjunto Unicode, que incluye caracteres de    |");
+            System.out.println("|    diversos idiomas, símbolos y emojis.                                  |");
+            System.out.println("|                                                                          |");
+            System.out.println("|                   Ejemplo: char primerNombre = Juan                      |");
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.print("Ingrese '1' para volver al menú DATOS PRIMITIVOS: ");
+            opcion = scanner.nextInt();
+            scanner.nextLine();  // Consume the newline character
+
+            switch (opcion) {
+                case 1:
+                    System.out.println("                                                                    ");
+                    System.out.println("  Volviendo al menú DATOS PRIMITIVOS...                             ");
+                    System.out.println("                                                                    ");
+                    break;
+                default:
+                    System.out.println("Ingrese una opcion valida.");
+            }
+        } while (opcion != 1);
+
+    }
+
+    private static void Explicacion_boolean() {
+        int opcion;
+
+        do {
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.println("|                                                                          |");
+            System.out.println("|                               boolean                                    |");
+            System.out.println("|                                                                          |");
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.println("|    En Java, una variable booleana es un tipo de variable que puede       |");
+            System.out.println("|    almacenar uno de dos posibles valores: true (verdadero) o false       |");
+            System.out.println("|    (falso). El tipo de dato que se utiliza para declarar una             |");
+            System.out.println("|    variable booleana es boolean.                                         |");
+            System.out.println("|                                                                          |");
+            System.out.println("|                     Ejemplo: boolean haceFrio = true                     |");
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.print("Ingrese '1' para volver al menú DATOS PRIMITIVOS: ");
+            opcion = scanner.nextInt();
+            scanner.nextLine();  // Consume the newline character
+
+            switch (opcion) {
+                case 1:
+                    System.out.println("                                                                    ");
+                    System.out.println("  Volviendo al menú DATOS PRIMITIVOS...                             ");
+                    System.out.println("                                                                    ");
+                    break;
+                default:
+                    System.out.println("Ingrese una opcion valida.");
+            }
+        } while (opcion != 1);
+
+    }
+
+    private static void VariablesString() {
+        int opcion;
+
+        do {
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.println("|                                                                          |");
+            System.out.println("|                                STRING                                    |");
+            System.out.println("|                                                                          |");
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.println("|    En Java, un String es una clase que representa una secuencia de       |");
+            System.out.println("|    caracteres. A diferencia de otros lenguajes de programación donde     |");
+            System.out.println("|    las cadenas de texto pueden ser simplemente arrays de caracteres,     |");
+            System.out.println("|    en Java, String es un objeto que proporciona métodos para             |");
+            System.out.println("|    manipular y operar sobre textos de manera más conveniente.            |");
+            System.out.println("|                                                                          |");
+            System.out.println("|               Ejemplo: String mensaje = ''Feliz navidad!'';              |");
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.print("Ingrese '1' para volver al menú DATOS PRIMITIVOS: ");
+            opcion = scanner.nextInt();
+            scanner.nextLine();  // Consume the newline character
+
+            switch (opcion) {
+                case 1:
+                    System.out.println("                                                                    ");
+                    System.out.println("  Volviendo al menú DATOS PRIMITIVOS...                             ");
+                    System.out.println("                                                                    ");
+                    break;
+                default:
+                    System.out.println("Ingrese una opcion valida.");
+            }
+        } while (opcion != 1);
+
     }
     private static void Constantes() {
         int opcion;
 
         do {
-            System.out.println("Constantes");
-            System.out.println("1. OPCION 1");
-            System.out.println("2. OPCION 2");
-            System.out.println("3. Volver al menu principal");
-            System.out.print("Ingrese la opcion: ");
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.println("|                                                                          |");
+            System.out.println("|                              CONSTANTES                                  |");
+            System.out.println("|                                                                          |");
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.println("|     En Java, las constantes son valores que, una vez establecidos,       |");
+            System.out.println("|     no pueden ser modificados durante la ejecución del programa. En      |");
+            System.out.println("|     términos de programación, una constante es una variable cuyo         |");
+            System.out.println("|     valor es fijo y no cambia después de su inicialización. En Java,     |");
+            System.out.println("|     las constantes se definen utilizando la palabra clave final.         |");
+            System.out.println("|                                                                          |");
+            System.out.println("|                     Cómo Definir Constantes en Java                      |");
+            System.out.println("|                                                                          |");
+            System.out.println("|     Para definir una constante en Java, debes usar la palabra clave      |");
+            System.out.println("|     final al declarar una variable. Además, es una convención común      |");
+            System.out.println("|     en Java escribir los nombres de las constantes en mayúsculas         |");
+            System.out.println("|     para diferenciarlas de las variables regulares.                      |");
+            System.out.println("|                                                                          |");
+            System.out.println("|            Ejemplo: public static final int EDAD_MINIMA = 18;            |");
+            System.out.println("|                     public static final double PI = 3.14159;             |");
+            System.out.println("|                                                                          |");
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.print("Ingrese '1' para volver al MENÚ PRINCIPAL:  ");
             opcion = scanner.nextInt();
             scanner.nextLine();  // Consume the newline character
 
             switch (opcion) {
                 case 1:
-                    System.out.println("Usted ingresó a la opcion 1 del submenu2.");
-                    break;
-                case 2:
-                    System.out.println("Usted ingresó a la opcion 2 del submenu2.");
-                    break;
-                case 3:
-                    System.out.println("Retornando al menu anterior...");
+                    System.out.println("                                                                    ");
+                    System.out.println("  Volviendo al MENÚ PRINCIPAL...                                    ");
+                    System.out.println("                                                                    ");
                     break;
                 default:
                     System.out.println("Ingrese una opcion valida.");
             }
-        } while (opcion != 3);
+        } while (opcion != 1);
+
     }
     private static void TipoDeOperadores() {
         int opcion;
 
         do {
-            System.out.println("Tipo de operadores");
-            System.out.println("1. OPCION 1");
-            System.out.println("2. OPCION 2");
-            System.out.println("3. Volver al menu principal");
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.println("|                                                                          |");
+            System.out.println("|                          TIPO DE OPERADORES                              |");
+            System.out.println("|                                                                          |");
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.println("|                                                                          |");
+            System.out.println("|                        1. Aritmeticos                                    |");
+            System.out.println("|                        2. Relacionales                                   |");
+            System.out.println("|                        3. Logicos                                        |");
+            System.out.println("|                        4. Asignacion                                     |");
+            System.out.println("|                        5. Incremento / Decremento                        |");
+            System.out.println("|                        6. Volver a MENU PRINCIPAL                        |");
+            System.out.println("|                                                                          |");
+            System.out.println("----------------------------------------------------------------------------");
             System.out.print("Ingrese la opcion: ");
             opcion = scanner.nextInt();
             scanner.nextLine();  // Consume the newline character
 
             switch (opcion) {
                 case 1:
-                    System.out.println("Usted ingresó a la opcion 1 del submenu2.");
+                    Operadores_Aritmeticos();
                     break;
                 case 2:
-                    System.out.println("Usted ingresó a la opcion 2 del submenu2.");
+                    Operadores_Relacionales();
                     break;
                 case 3:
-                    System.out.println("Retornando al menu anterior...");
+                    Operadores_Logicos();
+                    break;
+                case 4:
+                    Operadores_Asignacion();
+                    break;
+                case 5:
+                    Operadores_Incremento_Decremento();
+                    break;
+                case 6:
+                    System.out.println("                                                                    ");
+                    System.out.println("  Volviendo a MENÚ PRINCIPAL...                                     ");
+                    System.out.println("                                                                    ");
+                    break;
+                default:
+                    System.out.println("Ingrese una opcion valida");
+            }
+        } while (opcion != 6);
+    }
+
+    private static void Operadores_Aritmeticos() {
+        int opcion;
+
+        do {
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.println("|                                                                          |");
+            System.out.println("|                         OPERADORES ARITMETICOS                           |");
+            System.out.println("|                                                                          |");
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.println("|    Estos operadores se utilizan para realizar operaciones matemáticas.   |");
+            System.out.println("|                                                                          |");
+            System.out.println("|    + : Suma                                                              |");
+            System.out.println("|    - : Resta                                                             |");
+            System.out.println("|    * : Multiplicación                                                    |");
+            System.out.println("|    / : División                                                          |");
+            System.out.println("|    % : Módulo (residuo de la división)                                   |");
+            System.out.println("|                                                                          |");
+            System.out.println("|     Ejemplo:                                                             |");
+            System.out.println("|                                                                          |");
+            System.out.println("|     int a = 6                                                            |");
+            System.out.println("|     int b = 3                                                            |");
+            System.out.println("|     int suma = a+b;                                                      |");
+            System.out.println("|     int resta = a-b;                                                     |");
+            System.out.println("|     int multiplicacion = a*b;                                            |");
+            System.out.println("|     int division =  a/b;                                                 |");
+            System.out.println("|                                                                          |");
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.print("Ingrese '1' para volver al menú OPERADORES ARITMETICOS: ");
+            opcion = scanner.nextInt();
+            scanner.nextLine();  // Consume the newline character
+
+            switch (opcion) {
+                case 1:
+                    System.out.println("                                                                    ");
+                    System.out.println("  Volviendo al menú DATOS PRIMITIVOS...                             ");
+                    System.out.println("                                                                    ");
                     break;
                 default:
                     System.out.println("Ingrese una opcion valida.");
             }
-        } while (opcion != 3);
+        } while (opcion != 1);
+
+    }
+    private static void Operadores_Relacionales() {
+        int opcion;
+
+        do {
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.println("|                                                                          |");
+            System.out.println("|                         OPERADORES RELACIONALES                          |");
+            System.out.println("|                                                                          |");
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.println("|                                                                          |");
+            System.out.println("|     Estos operadores se utilizan para comparar dos valores.              |");
+            System.out.println("|                                                                          |");
+            System.out.println("|     == : Igual a                                                         |");
+            System.out.println("|     != : Diferente de                                                    |");
+            System.out.println("|     > : Mayor que                                                        |");
+            System.out.println("|     < : Menor que                                                        |");
+            System.out.println("|     >= : Mayor o igual que                                               |");
+            System.out.println("|     <= : Menor o igual que                                               |");
+            System.out.println("|                                                                          |");
+            System.out.println("|     Ejemplo:                                                             |");
+            System.out.println("|                                                                          |");
+            System.out.println("|     int a = 10;                                                          |");
+            System.out.println("|     int b = 5;                                                           |");
+            System.out.println("|     boolean esIgual = (a == b); // esIgual = false                       |");
+            System.out.println("|     boolean esMayor = (a > b);  // esMayor = true                        |");
+            System.out.println("|                                                                          |");
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.print("Ingrese '1' para volver al menú OPERADORES ARITMETICOS: ");
+            opcion = scanner.nextInt();
+            scanner.nextLine();  // Consume the newline character
+
+            switch (opcion) {
+                case 1:
+                    System.out.println("                                                                    ");
+                    System.out.println("  Volviendo al menú DATOS PRIMITIVOS...                             ");
+                    System.out.println("                                                                    ");
+                    break;
+                default:
+                    System.out.println("Ingrese una opcion valida.");
+            }
+        } while (opcion != 1);
+
+    }
+    private static void Operadores_Logicos() {
+        int opcion;
+
+        do {
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.println("|                                                                          |");
+            System.out.println("|                          OPERADORES LOGICOS                              |");
+            System.out.println("|                                                                          |");
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.println("|                                                                          |");
+            System.out.println("|    Los operadores lógicos están relacionados con el álgebra de           |");
+            System.out.println("|    Boole. Evalúan una expresión en la que están implicados uno o dos     |");
+            System.out.println("|    operandos con valor de tipo boolean. Retornan como resultando un      |");
+            System.out.println("|    valor lógico, que será true si la evaluación de la expresión es       |");
+            System.out.println("|    cierta o false en caso contrario.                                     |");
+            System.out.println("|                                                                          |");
+            System.out.println("|     && : Y lógico (AND)                                                  |");
+            System.out.println("|     || : O lógico (OR)                                                   |");
+            System.out.println("|     ! : No lógico (NOT)                                                  |");
+            System.out.println("|                                                                          |");
+            System.out.println("|     Ejemplo:                                                             |");
+            System.out.println("|                                                                          |");
+            System.out.println("|     boolean a = true;                                                    |");
+            System.out.println("|     boolean b = false;                                                   |");
+            System.out.println("|     boolean resultado = a && b; // resultado = false                     |");
+            System.out.println("|                                                                          |");
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.print("Ingrese '1' para volver al menú OPERADORES ARITMETICOS: ");
+            opcion = scanner.nextInt();
+            scanner.nextLine();  // Consume the newline character
+
+            switch (opcion) {
+                case 1:
+                    System.out.println("                                                                    ");
+                    System.out.println("  Volviendo al menú DATOS PRIMITIVOS...                             ");
+                    System.out.println("                                                                    ");
+                    break;
+                default:
+                    System.out.println("Ingrese una opcion valida.");
+            }
+        } while (opcion != 1);
+
+    }
+    private static void Operadores_Asignacion() {
+        int opcion;
+
+        do {
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.println("|                                                                          |");
+            System.out.println("|                       OPERADORES DE ASIGNACION                           |");
+            System.out.println("|                                                                          |");
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.println("|                                                                          |");
+            System.out.println("|     Los operadores de asignación son fundamentales en Java ya que        |");
+            System.out.println("|     permiten asignar valores a variables. A través de estos              |");
+            System.out.println("|     operadores, se puede almacenar información en variables para su      |");
+            System.out.println("|     posterior uso en el programa.                                        |");
+            System.out.println("|                                                                          |");
+            System.out.println("|     = : Asignación simple                                                |");
+            System.out.println("|     += : Asignación con suma                                             |");
+            System.out.println("|     -= : Asignación con resta                                            |");
+            System.out.println("|     *= : Asignación con multiplicación                                   |");
+            System.out.println("|     /= : Asignación con división                                         |");
+            System.out.println("|     %= : Asignación con módulo                                           |");
+            System.out.println("|                                                                          |");
+            System.out.println("|     Ejemplo:                                                             |");
+            System.out.println("|                                                                          |");
+            System.out.println("|    int x = 10;                                                           |");
+            System.out.println("|    x += 5;  // Equivalente a x = x + 5; x = 15                           |");
+            System.out.println("|                                                                          |");
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.print("Ingrese '1' para volver al menú OPERADORES ARITMETICOS: ");
+            opcion = scanner.nextInt();
+            scanner.nextLine();  // Consume the newline character
+
+            switch (opcion) {
+                case 1:
+                    System.out.println("                                                                    ");
+                    System.out.println("  Volviendo al menú DATOS PRIMITIVOS...                             ");
+                    System.out.println("                                                                    ");
+                    break;
+                default:
+                    System.out.println("Ingrese una opcion valida.");
+            }
+        } while (opcion != 1);
+
+    }
+    private static void Operadores_Incremento_Decremento() {
+        int opcion;
+
+        do {
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.println("|                                                                          |");
+            System.out.println("|                   OPERADORES INCREMENTO / DECREMENTO                     |");
+            System.out.println("|                                                                          |");
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.println("|                                                                          |");
+            System.out.println("|    Java tiene dos operaciones opuestas llamadas incremento (++) y        |");
+            System.out.println("|    decremento (--), que aumentan o disminuyen el valor de una            |");
+            System.out.println("|    variable en uno .                                                     |");
+            System.out.println("|                                                                          |");
+            System.out.println("|    Ejemplo:                                                              |");
+            System.out.println("|                                                                          |");
+            System.out.println("|    int c = 10;                                                           |");
+            System.out.println("|    c++; // c = 11                                                        |");
+            System.out.println("|    --c; // c = 10                                                        |");
+            System.out.println("|                                                                          |");
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.print("Ingrese '1' para volver al menú OPERADORES ARITMETICOS: ");
+            opcion = scanner.nextInt();
+            scanner.nextLine();  // Consume the newline character
+
+            switch (opcion) {
+                case 1:
+                    System.out.println("                                                                    ");
+                    System.out.println("  Volviendo al menú DATOS PRIMITIVOS...                             ");
+                    System.out.println("                                                                    ");
+                    break;
+                default:
+                    System.out.println("Ingrese una opcion valida.");
+            }
+        } while (opcion != 1);
+
     }
     private static void CondicionalIfElse() {
         int opcion;
