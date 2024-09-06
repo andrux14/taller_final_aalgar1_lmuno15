@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Random;
 
 public class MenuCapituloDeProgramacion {
     private static final Scanner scanner = new Scanner(System.in);
@@ -45,7 +46,7 @@ public class MenuCapituloDeProgramacion {
                 case 5:
                     CondicionalIfElse();
                     break;
-                /*case 6:
+                case 6:
                     CondicionalSwitch();
                     break;
                 case 7:
@@ -54,7 +55,7 @@ public class MenuCapituloDeProgramacion {
                 case 8:
                     BucleDoWhile();
                     break;
-                case 9:
+                /*case 9:
                     BucleWhile();
                     break;
                 case 10:
@@ -428,6 +429,7 @@ public class MenuCapituloDeProgramacion {
         } while (opcion != 1);
 
     }
+
     private static void Constantes() {
         int opcion;
 
@@ -470,6 +472,7 @@ public class MenuCapituloDeProgramacion {
         } while (opcion != 1);
 
     }
+
     private static void TipoDeOperadores() {
         int opcion;
 
@@ -562,6 +565,7 @@ public class MenuCapituloDeProgramacion {
         } while (opcion != 1);
 
     }
+
     private static void Operadores_Relacionales() {
         int opcion;
 
@@ -605,6 +609,7 @@ public class MenuCapituloDeProgramacion {
         } while (opcion != 1);
 
     }
+
     private static void Operadores_Logicos() {
         int opcion;
 
@@ -648,6 +653,7 @@ public class MenuCapituloDeProgramacion {
         } while (opcion != 1);
 
     }
+
     private static void Operadores_Asignacion() {
         int opcion;
 
@@ -692,6 +698,7 @@ public class MenuCapituloDeProgramacion {
         } while (opcion != 1);
 
     }
+
     private static void Operadores_Incremento_Decremento() {
         int opcion;
 
@@ -729,6 +736,7 @@ public class MenuCapituloDeProgramacion {
         } while (opcion != 1);
 
     }
+
     private static void CondicionalIfElse() {
         int opcion;
 
@@ -757,7 +765,308 @@ public class MenuCapituloDeProgramacion {
         } while (opcion != 3);
     }
 
-}
+    private static void CondicionalSwitch() {
+        int opcion;
+        do {
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.println("|                            SWITCH                                        |");
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.println("|                        1. Explicacion Switch                             |");
+            System.out.println("|                        2. Programa de Switch - Valide su calificación    |");
+            System.out.println("|                           Digite la opcion:                              |");
+            System.out.println("|                        3. Volver a MENU PRINCIPAL                        |");
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.print("Ingrese la opcion: ");
+            opcion = scanner.nextInt();
+            scanner.nextLine();// Consume the newline character
+            switch (opcion) {
+                case 1:
+                    Explicacion_switch();
+                    break;
+                case 2:
+                    Programa_de_switch();
+                    break;
+                case 3:
+                    System.out.println("                                                                    ");
+                    System.out.println("  Volviendo a MENÚ PRINCIPAL...                                     ");
+                    System.out.println("                                                                    ");
+                    break;
+                default:
+                    System.out.println("Ingrese una opción valida");
+            }
+        } while (opcion != 3);
+    }
 
+    private static void Explicacion_switch() {
+        int opcion;
+        do {
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.println("|                                                                          |");
+            System.out.println("|                                   SWITCH                                 |");
+            System.out.println("|                                                                          |");
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.println("|    Es una estructura que evalúa más de un caso y se caracteriza          |");
+            System.out.println("|    por: Selección de una opción entre varias.                            |");
+            System.out.println("|                                                                          |");
+            System.out.println("|    Switch recibe un “caso” y lo evalúa hasta encontrar el caso           |");
+            System.out.println("|    que corresponda                                                       |");
+            System.out.println("|                                                                          |");
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.print("Ingrese '3' para volver al menú SWITCH: ");
+            opcion = scanner.nextInt();
+            scanner.nextLine();  // Consume the newline character
+            switch (opcion) {
+                case 1:
+                    System.out.println("                                                                    ");
+                    System.out.println("  Volviendo al menú CONDICIONAL SWITCH...                           ");
+                    System.out.println("                                                                    ");
+                    break;
+                default:
+                    System.out.println("Ingrese la opcion valida.");
+            }
+        } while (opcion != 3);
+
+    }
+
+    private static void Programa_de_switch() {
+        int opcion;
+
+        do {
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.println("|                 Ingrese '1' para ver el ejemplo                          |");
+            System.out.println("|             ingrese '2' para volver al menú SWITCH                       |");
+            System.out.println("----------------------------------------------------------------------------");
+            opcion = scanner.nextInt();
+            scanner.nextLine();
+
+            switch (opcion) {
+
+                case 1:
+                    System.out.print("\nIngrese una calificación (1 a 10): ");
+                    int calificacion = scanner.nextInt();
+
+                    switch (calificacion) {
+                        case 1:
+                        case 2:
+                            System.out.println("Su calificación es: F");
+                            break;
+                        case 3:
+                        case 4:
+                            System.out.println("Su calificación es: D");
+                            break;
+                        case 5:
+                        case 6:
+                            System.out.println("Su calificación es: C");
+                            break;
+                        case 7:
+                        case 8:
+                            System.out.println("Su calificación es: B");
+                            break;
+                        case 9:
+                        case 10:
+                            System.out.println("Su calificación es: A");
+                            break;
+                        default:
+                            System.out.println("Número no válido, por favor verifique");
+                            break;
+                    }
+                    break;
+                // Consume the newline character
+                case 2:
+                    System.out.println("                                                                    ");
+                    System.out.println("  Volviendo al menú CONDICIONAL SWITCH...                           ");
+                    System.out.println("                                                                    ");
+                    break;
+                default:
+                    System.out.println("Ingrese una opcion valida.");
+                    break;
+            }
+
+        } while (opcion != 2);
+    }
+
+    private static void CondicionalTernaria() {
+        int opcion;
+        do {
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.println("|                             TERNARIA                                     |");
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.println("|          1. Explicacion de ternaria                                      |");
+            System.out.println("|          2. Programa ternaria - determine si un numero es par o impar    |");
+            System.out.println("|             Digite la opcion:                                            |");
+            System.out.println("|          3. Volver a MENU PRINCIPAL                                      |");
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.print("Ingrese la opcion: ");
+            opcion = scanner.nextInt();
+            scanner.nextLine();// Consume the newline character
+            switch (opcion) {
+                case 1:
+                    Explicacion_de_ternaria();
+                    break;
+                case 2:
+                    Programa_ternaria();
+                    break;
+                case 3:
+                    System.out.println("                                                                    ");
+                    System.out.println("  Volviendo a MENÚ PRINCIPAL...                                     ");
+                    System.out.println("                                                                    ");
+                    break;
+                default:
+                    System.out.println("Ingrese una opción valida");
+            }
+        } while (opcion != 3);
+    }
+
+    private static void Explicacion_de_ternaria() {
+        int opcion;
+        do {
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.println("|                                                                          |");
+            System.out.println("|                                 TERNARIA                                 |");
+            System.out.println("|                                                                          |");
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.println("|  Es una construcción que permite tomar decisiones basadas en una         |");
+            System.out.println("|  condición booleana de manera concisa en una sola línea de código.       |");
+            System.out.println("|  Es una forma abreviada de expresar una estructura condicional(if-else)  |");
+            System.out.println("|  Este operador se compone de tres partes:                                |");
+            System.out.println("|  - La condición a evaluar (condición booleana)                           |");
+            System.out.println("|  - El valor si la condición es verdadera (valor verdadero)               |");
+            System.out.println("|  - El valor si la condición es falsa (valor falso)                       |");
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.print("Ingrese '2' para volver al menú TEERNARIA: ");
+            opcion = scanner.nextInt();
+            scanner.nextLine();  // Consume the newline character
+            switch (opcion) {
+                case 1:
+                    System.out.println("                                                                    ");
+                    System.out.println("  Volviendo al menú CONDICIONAL TERNARIA...                         ");
+                    System.out.println("                                                                    ");
+                    break;
+                default:
+                    System.out.println("Ingrese la opcion valida.");
+            }
+        } while (opcion != 2);
+
+    }
+
+    private static void Programa_ternaria() {
+        System.out.println("--------------------------------------------------------------------------------");
+        System.out.println("|            Programa ternaria - determine si un numero es par o impar         |");
+        System.out.println("--------------------------------------------------------------------------------");
+        System.out.println("Ingrese un numero entero: ");
+        int numero = scanner.nextInt();
+        String resultado = (numero % 2 == 0) ? "par" : "impar";
+        System.out.println("El número " + numero + " es " + resultado);
+        int opcion;
+        do {
+            System.out.println(" Ingrese '2' para volver al menú TERNARIA");
+            opcion = scanner.nextInt();
+            scanner.nextLine();
+            switch (opcion) {
+                case 1:
+                    System.out.println("                                                                    ");
+                    System.out.println("  Volviendo al menú CONDICIONAL TERNARIA...                         ");
+                    System.out.println("                                                                    ");
+                    break;
+                default:
+                    System.out.println("Ingrese una opcion valida.");
+                    break;
+            }
+        } while (opcion != 2);
+
+    }
+
+    private static void BucleDoWhile() {
+        int opcion;
+        do {
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.println("|                             DO WHILE                                     |");
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.println("|             1. Explicacion de DO WHILE                                   |");
+            System.out.println("|             2. Programa DO WHILE - adivina el numero                     |");
+            System.out.println("|                Digite la opcion:                                         |");
+            System.out.println("|             3. Volver a MENU PRINCIPAL                                   |");
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.print("Ingrese la opcion: ");
+            opcion = scanner.nextInt();
+            scanner.nextLine();// Consume the newline character
+            switch (opcion) {
+                case 1:
+                    Explicacion_de_do_while();
+                    break;
+                case 2:
+                    Programa_do_while();
+                    break;
+                case 3:
+                    System.out.println("                                                                    ");
+                    System.out.println("  Volviendo a MENÚ PRINCIPAL...                                     ");
+                    System.out.println("                                                                    ");
+                    break;
+                default:
+                    System.out.println("Ingrese una opción valida");
+            }
+        } while (opcion != 3);
+
+
+    }
+
+    private static void Explicacion_de_do_while() {
+        int opcion;
+        do {
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.println("|                                                                          |");
+            System.out.println("|                                 DO WHILE                                 |");
+            System.out.println("|                                                                          |");
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.println("| La estructura repetitiva es aquella en que el cuerpo del bucle se        |");
+            System.out.println("| repite mientras que se cumple una determinada condición.                 |");
+            System.out.println("| En esta estructura, la condición del ciclo se evalúa al final, por lo    |");
+            System.out.println("| que siempre se ejecutarán las instrucciones del ciclo por lo menos       |");
+            System.out.println("| una vez. Si la condición se evalúa verdadera, se ejecuta nuevamente      |");
+            System.out.println("| el cuerpo del bucle; si la condición es falsa, entonces sale y se sigue  |");
+            System.out.println("| con el flujo normal del algoritmo. Este proceso se repite una y otra     |");
+            System.out.println("| vez hasta que la condición sea falsa.                                    |");
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.print("Ingrese '2' para volver al menú TEERNARIA: ");
+            opcion = scanner.nextInt();
+            scanner.nextLine();  // Consume the newline character
+            switch (opcion) {
+                case 1:
+                    System.out.println("                                                                    ");
+                    System.out.println("  Volviendo al menú BUCLE DO WHILE...                               ");
+                    System.out.println("                                                                    ");
+                    break;
+                default:
+                    System.out.println("Ingrese la opcion valida.");
+            }
+        } while (opcion != 2);
+
+    }
+
+    private static void Programa_do_while() {
+
+        System.out.println("----------------------------------------------------------------------------");
+        System.out.println("|            Programa DO WHILE- Adivina el número                          |");
+        System.out.println("----------------------------------------------------------------------------");
+
+        Random random = new Random();
+        int numeroAleatorio = random.nextInt(10) + 1;
+        int adivinanza;
+        do {
+            System.out.println("Adivina un numero entre 1 y 10: ");
+            System.out.println("Ingrese el numero ");
+            adivinanza = scanner.nextInt();
+            if (adivinanza < numeroAleatorio) {
+                System.out.println("El número es mayor. Intente de nuevo.");
+            } else if (adivinanza > numeroAleatorio) {
+                System.out.println("El número es menor. Intente de nuevo.");
+            } else {
+                System.out.println(" Adivinaste el número.");
+            }
+        } while (adivinanza != numeroAleatorio);//continua hasta que la adivinanza sea correcta
+
+    }
+
+}
 
 
