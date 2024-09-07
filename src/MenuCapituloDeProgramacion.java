@@ -58,9 +58,9 @@ public class MenuCapituloDeProgramacion {
                 case 9:
                     BucleWhile();
                     break;
-                /*case 10:
+                case 10:
                     BucleFor();
-                    break;*/
+                    break;
                 case 11:
                     System.out.println("Saliendo...");
                     break;
@@ -69,6 +69,8 @@ public class MenuCapituloDeProgramacion {
             }
         } while (opcion != 11);
     }
+
+    
 
     private static void DatosPrimitivos() {
         int opcion;
@@ -741,28 +743,128 @@ public class MenuCapituloDeProgramacion {
         int opcion;
 
         do {
-            System.out.println("Condicional IF, ELSE, IF ELSE");
-            System.out.println("1. OPCION 1");
-            System.out.println("2. OPCION 2");
-            System.out.println("3. Volver al menu principal");
-            System.out.print("Ingrese la opcion: ");
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.println("|                         IF, ELSE IF Y ELSE                               |");
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.println("|                      1. Explicación de IF                                |");
+            System.out.println("|                      2. Explicación de ELSE IF                           |");
+            System.out.println("|                      3. Explicación de ELSE                              |");
+            System.out.println("|                      4. PROGRAMA DE IF, else if /Else                    |");
+            System.out.println("|                      5. Volver a MENU PRINCIPAL                          |");
+            System.out.println("----------------------------------------------------------------------------");
+
             opcion = scanner.nextInt();
             scanner.nextLine();  // Consume the newline character
 
             switch (opcion) {
                 case 1:
-                    System.out.println("Usted ingresó a la opcion 1 del submenu2.");
+                    Explicacion_if();
                     break;
                 case 2:
-                    System.out.println("Usted ingresó a la opcion 2 del submenu2.");
+                    Explicacion_else_if();
                     break;
                 case 3:
+                    Explicacion_else();
+                    break;
+                case 4:
+                    Programa_if_else();
+                case 5:
                     System.out.println("Retornando al menu anterior...");
                     break;
                 default:
                     System.out.println("Ingrese una opcion valida.");
             }
-        } while (opcion != 3);
+        } while (opcion != 5);
+    }
+
+    private static void Explicacion_if() {
+        int opcion;
+        do {
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.println("|                                                                          |");
+            System.out.println("|                          EXPLICACION IF                                  |");
+            System.out.println("|                                                                          |");
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.println("| Es una construcción del lenguaje que controla el orden de las            |");
+            System.out.println("| instrucciones. Se le pasa una expresión lógica entre paréntesis y luego  |");
+            System.out.println("| se describe un bloque de código entre llaves. Este bloque de código      |");
+            System.out.println("| se ejecutará solo si la condición se cumple. Si la condición no se       |");
+            System.out.println("| cumple, se omitirá el bloque de código.                                  |");
+            System.out.println("| if (condición){}                                                         |");
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.print("Ingrese '2' para volver al menú CONDICIONAL IF ELSE: ");
+            opcion = scanner.nextInt();
+            scanner.nextLine();  // Consume the newline character
+            switch (opcion) {
+                case 1:
+                    System.out.println("                                                                    ");
+                    System.out.println("  Volviendo al menú CONDICIONAL IF ELSE...                          ");
+                    System.out.println("                                                                    ");
+                    break;
+                default:
+                    System.out.println("Ingrese la opcion valida.");
+            }
+        } while (opcion != 2);
+    }
+    private static void Explicacion_else_if() {
+        int opcion;
+        do {
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.println("|                                                                          |");
+            System.out.println("|                         EXPLICACION ELSE IF                              |");
+            System.out.println("|                                                                          |");
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.println("| Se utiliza en Java para tomar decisiones sobre un valor preexistente     |");
+            System.out.println("| Es decir, si una condición basada en ese valor se cumple (si esa         |");
+            System.out.println("| condición es verdadera), el programa tomará un camino. Si no el          |");
+            System.out.println("| programa tomará otro. A esa condición se la llama condición booleana,    |");
+            System.out.println("| ya que solo puede tomar como valor verdadero o falso.                    |");
+            System.out.println("|                                                                          |");
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.print("Ingrese '2' para volver al menú CONDICIONAL IF ELSE: ");
+            opcion = scanner.nextInt();
+            scanner.nextLine();  // Consume the newline character
+            switch (opcion) {
+                case 1:
+                    System.out.println("                                                                    ");
+                    System.out.println("  Volviendo al menú CONDICIONAL IF ELSE...                          ");
+                    System.out.println("                                                                    ");
+                    break;
+                default:
+                    System.out.println("Ingrese la opcion valida.");
+            }
+        } while (opcion != 2);
+    }
+    private static void Explicacion_else() {
+        int opcion;
+        do {
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.println("|                                                                          |");
+            System.out.println("|                         EXPLICACION ELSE                                 |");
+            System.out.println("|                                                                          |");
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.println("| Se utiliza como parte de una estructura de control condicional junto     |");
+            System.out.println("| con if. El bloque else especifica una sección de código que se           |");
+            System.out.println("| si la condición evaluada en el bloque if es falsa.                       |");
+            System.out.println("| if (condicion){                                                          |");
+            System.out.println("| } else{}                                                                 |");
+            System.out.println("|                                                                          |");
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.print("Ingrese '2' para volver al menú CONDICIONAL IF ELSE: ");
+            opcion = scanner.nextInt();
+            scanner.nextLine();  // Consume the newline character
+            switch (opcion) {
+                case 1:
+                    System.out.println("                                                                    ");
+                    System.out.println("  Volviendo al menú CONDICIONAL IF ELSE...                          ");
+                    System.out.println("                                                                    ");
+                    break;
+                default:
+                    System.out.println("Ingrese la opcion valida.");
+            }
+        } while (opcion != 2);
+    }
+    private static void Programa_if_else() {
     }
 
     private static void CondicionalSwitch() {
@@ -788,7 +890,7 @@ public class MenuCapituloDeProgramacion {
                     break;
                 case 3:
                     System.out.println("                                                                    ");
-                    System.out.println("  Volviendo a MENÚ PRINCIPAL...                                     ");
+                    System.out.println("  Volviendo a MENÚ DATOS PRIMITIVOS...                              ");
                     System.out.println("                                                                    ");
                     break;
                 default:
@@ -889,7 +991,7 @@ public class MenuCapituloDeProgramacion {
         int opcion;
         do {
             System.out.println("----------------------------------------------------------------------------");
-            System.out.println("|                  CONDICIONAL TERNARIA                                    |");
+            System.out.println("|                    CONDICIONAL TERNARIA                                  |");
             System.out.println("----------------------------------------------------------------------------");
             System.out.println("|          1. Explicacion de ternaria                                      |");
             System.out.println("|          2. Programa ternaria - determine si un número es par o impar    |");
@@ -904,11 +1006,12 @@ public class MenuCapituloDeProgramacion {
                     Explicacion_de_ternaria();
                     break;
                 case 2:
+
                     Programa_ternaria();
                     break;
                 case 3:
                     System.out.println("                                                                    ");
-                    System.out.println("  Volviendo a MENÚ PRINCIPAL...                                     ");
+                    System.out.println("  Volviendo a MENÚ DATOS PRIMITIVOS...                                     ");
                     System.out.println("                                                                    ");
                     break;
                 default:
@@ -1119,7 +1222,7 @@ public class MenuCapituloDeProgramacion {
             switch (opcion) {
                 case 1:
                     System.out.println("                                                                    ");
-                    System.out.println("  Volviendo al menú BUCLE WHILE...                               ");
+                    System.out.println("  Volviendo al menú BUCLE WHILE...                                  ");
                     System.out.println("                                                                    ");
                     break;
                 default:
@@ -1150,7 +1253,7 @@ public class MenuCapituloDeProgramacion {
             switch (opcion) {
                 case 1:
                     System.out.println("                                                                    ");
-                    System.out.println("  Volviendo al menú BUCLE WHILE...                         ");
+                    System.out.println("  Volviendo al menú BUCLE WHILE...                                  ");
                     System.out.println("                                                                    ");
                     break;
                 default:
@@ -1158,8 +1261,80 @@ public class MenuCapituloDeProgramacion {
                     break;
             }
         } while (opcion != 2);
+    }
+    private static void BucleFor() {
+        int opcion;
+        do {
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.println("|                           BUCLE FOR                                      |");
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.println("|                   1. Explicacion For                                     |");
+            System.out.println("|                   2. Programa de For - Sumatoria de números              |");
+            System.out.println("|                   3. Volver a MENU PRINCIPAL                             |");
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.print("Ingrese la opcion: ");
+            opcion = scanner.nextInt();
+            scanner.nextLine();// Consume the newline character
+            switch (opcion) {
+                case 1:
+                    Explicacion_for();
+                    break;
+                case 2:
+                    Programa_de_for();
+                    break;
+                case 3:
+                    System.out.println("                                                                    ");
+                    System.out.println("  Volviendo a MENÚ PRINCIPAL...                                     ");
+                    System.out.println("                                                                    ");
+                    break;
+                default:
+                    System.out.println("Ingrese una opción valida");
+            }
+        } while (opcion != 3);
+    }
 
+    private static void Explicacion_for() {
+        int opcion;
+        do {
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.println("|                                                                          |");
+            System.out.println("|                           EXPLICACION FOR                                |");
+            System.out.println("|                                                                          |");
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.println("|  Es una estructura de control cíclica, nos permiten ejecutar una o       |");
+            System.out.println("|  varias líneas de código de forma iterativa (o repetitiva), pero         |");
+            System.out.println("|  teniendo cierto control y conocimiento sobre las iteraciones. En el     |");
+            System.out.println("|  ciclo for, es necesario tener un valor inicial y un valor final, y      |");
+            System.out.println("|  opcionalmente podemos hacer uso del tamaño del paso entre cada giro     |");
+            System.out.println("|  o iteración del ciclo.                                                  |");
+            System.out.println("----------------------------------------------------------------------------");
+            System.out.print("Ingrese '2' para volver al menú BUCLE FOR: ");
+            opcion = scanner.nextInt();
+            scanner.nextLine();  // Consume the newline character
+            switch (opcion) {
+                case 1:
+                    System.out.println("                                                                    ");
+                    System.out.println("  Volviendo al menú BUCLE FOR...                                    ");
+                    System.out.println("                                                                    ");
+                    break;
+                default:
+                    System.out.println("Ingrese la opción valida.");
+            }
+        } while (opcion != 2);
 
+    }
+
+    private static void Programa_de_for() {
+        System.out.println("----------------------------------------------------------------------------");
+        System.out.println("|                      PROGRAMA FOR- Sumatoria                             |");
+        System.out.println("----------------------------------------------------------------------------");
+        System.out.println("Ingrese un número entero:  ");
+        int numeroF = scanner.nextInt();
+        int sumaF = 0;
+        for (int i = 1; i <= numeroF; i++){
+            sumaF += i;
+        }
+        System.out.println("La sumatoria de los números entre 1 y " + numeroF + " es: " + sumaF);
 
     }
 }
